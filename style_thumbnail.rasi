@@ -84,7 +84,7 @@ element-icon {
 	text-color: inherit;
 	horizontal-align: 0.5;
 	vertical-align: 0.5;
-	size: 270px;
+	size: 210px;
 	border: 2px;
 	border-color: @ac;
 	border-radius: 15px;
