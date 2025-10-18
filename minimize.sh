@@ -33,5 +33,5 @@ xdotool windowsize "$wid" 200 1000;
 xdotool windowmove "$wid" "$((pos_x+100))" -1000;
 
 sleep 0.2
-bspc node "$wid" -d hidden
+bspc node "$wid" -g hidden=on
 bspc node "$wid" -t tiled

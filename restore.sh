@@ -14,7 +14,7 @@ mon_h=$(echo "$monitor" | jq '.rectangle.height')
 
 # Float and center
 bspc node "$wid" -t floating;
-bspc node "$wid" -d focused;
+bspc node "$wid" -g hidden=off
 
 pos_x=$(($mon_w/2 - 100))
 pos_y=$(($mon_h/2 - 500))
