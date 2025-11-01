@@ -26,10 +26,9 @@ for A in "$THUMB_DIR"/*; do
     ((k++))
 done
 
-
-
+monitor_name="$(bspc query -M -m focused --names)";
 # Show in Rofi
-window=$(printf "%b" "$entries" | rofi -dmenu -show-icons -theme "$THEME" -p "Hidden Windows:")
+window=$(printf "%b" "$entries" | rofi -m $monitor_name -dmenu -show-icons -theme "$THEME" -p "Hidden Windows:")
 
 [ -z "$window" ] && exit 0
 
