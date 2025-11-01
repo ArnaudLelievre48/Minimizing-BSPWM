@@ -2,6 +2,8 @@
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 
+mkdir -p "$SCRIPT_DIR/thumbnails"
+
 wid=${1:-$(bspc query -N -n focused)}
 [ -z "$wid" ] && exit 1
 
