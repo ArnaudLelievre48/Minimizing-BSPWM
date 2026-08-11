@@ -1,7 +1,17 @@
+
+
 # Minimizing-BSPWM
 Utility tool to make minizing windows possible in BSPWM like it is on non-tiliing WM
 ## DEMO
 ![](minimizer-demo.GIF)
+## Requirements
+Ensure the following dependencies are installed, as they are directly used by the scripts:
+- `maim` (for window screenshots)
+- `jq` (for parsing `bspc` query output)
+- `xdotool` (for window movement and resizing animations)
+- `rofi` (for the restore menu interface)
+- `xprop` (for fetching window titles)
+
 ## Installation and usage
 
 **First you will need to be using bspwm, but I am sure the way my scripts work, that the adaptation for another tiling WM will be easy enough.**
